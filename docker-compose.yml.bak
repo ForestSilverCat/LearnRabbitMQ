@@ -5,7 +5,7 @@ services:
     hostname: rabbitmq
     restart: always
     environment:
-      - RABBITMQ_DEFAULT_USER=mquser
-      - RABBITMQ_DEFAULT_PASS=mqpass
+      - RABBITMQ_DEFAULT_USER: mquser
+      - RABBITMQ_DEFAULT_PASS: mqpass
     ports:
       - 15672:15672
